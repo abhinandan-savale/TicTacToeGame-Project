@@ -1,5 +1,5 @@
 let boxes = document.querySelectorAll(".box");
-let resetBtn = document.querySelector(".reset-btn");
+let resetBtn = document.querySelector("#reset-btn");
 let newGameBtn = document.querySelector("#new-btn");
 let mgsContainer = document.querySelector(".mgs-container");
 let mgs = document.querySelector("#mgs");
@@ -71,7 +71,6 @@ const checkWinner = () => {
 
     if (pos1val != "" && pos2val != "" && pos3val != "") {
       if (pos1val === pos2val && pos2val === pos3val) {
-        console.log("Winner");
         showWinner(pos1val);
       }
     }
